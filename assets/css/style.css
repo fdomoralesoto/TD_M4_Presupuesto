@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.presupuesto.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%; /* Cambiar el valor a 100% */
+    overflow-x: hidden; 
+  }  
+.contenido-principal {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background: rgb(234 241 252);
+    background: linear-gradient(101deg, rgb(247 250 255) 0%, rgb(255 248 234) 100%);
+    box-shadow: rgb(144 227 230) 0px 0px 20px;
+  }
+.contenedor-ingreso-presupuesto {
+    background-color: #ebffeb;
+    border: 2px solid #78be78;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.form-group.organizacion {
+    text-align: left;
+    margin-bottom: 10px !important;
+}
+.form-group.organizacion.cantidad-gasto {
+    margin-top: 25px;
+}
+.contenedor-ingreso-items {
+    background-color: #fcd6d6;
+    border: 2px solid #ca7272;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+}
+.contenido {
+    padding:20px;
+}
+.primario.secundario {
+    background: transparent;
+}
+.titulo {
+    color: #030303;
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+.presupuesto p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.presupuesto p span {
+    font-weight: normal;
+}
+#gastos {
+    margin-bottom: 30px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color:#004e92;
+    font-size: 22px;
+    margin-bottom:30px;
+}
+.text-nombre {
+    text-align: left;
+    font-size: 18px;
+    color: #7070ff;
+    padding: 0px 0px 10px 0px;
+}
+.columna {
+    width: 33.33%;
+    text-align: left;
+  }
+p.titulos {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+p.titulos-2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: left;
+}
+p.titulos-3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+.contenido.secundario {
+    display: flex;
+    justify-content: space-between;
+}
+.contenido.tercero {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.list-group-item {
+    background-color: none !important; 
+    border: none !important;
+}
+.borrar-gasto i {
+    color: white;
+}
+button.btn.btn-danger.borrar-gasto {
+    border-radius: 25px;
+}
+span.badge.badge-primary.badge-pill {
+    padding: 13px 15px 13px 15px;
+}
+li.list-group-item.d-flex.justify-content-between.align-items-center {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #007ff7;
+}
+.tabla-gastos {
+    display: inline-flex;
+}
+
+.tabla-gastos td {
+    padding: 20px;
+}
+
+.tabla-gastos .centrado {
+    text-align: center;
+    width: 33%;
+}
+.tabla-gastos .centrado-izquierda {
+    text-align: left;
+    width: 33%;
+}

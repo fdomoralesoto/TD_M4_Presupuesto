@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&family=Quicksand:wght@700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/style.css"
+    />
+    <title>Presupuesto APP</title>
+  </head>
+  <body>
+    <div class="presupuesto container">
+      
+      <table style="width: 100%">
+        <tr>
+          <td style="width: 50%; text-align: center">
+            <!-- Contenido de la primera columna -->
+            <div class="contenido primario">
+              <p class="titulo">Presupuesto APP</p>
+              <p class="text-nombre" id="respuesta"></p>
+              <form id="agregar-gasto" action="#">
+                <div class="contenedor-ingreso-presupuesto">
+                <div class="form-group organizacion">
+                  <label for="presupuesto-input">Ingresa tu Presupuesto:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="presupuesto-input"
+                    placeholder="Presupuesto en $"
+                  />
+                </div>
+                <button type="" class="btn btn-primary mr-auto" id="preguntar">Agregar Presupuesto</button>
+                </div>
+                <div class="contenedor-ingreso-items">
+                <div class="form-group organizacion">
+                  <label for="gasto">Ingresa el Nombre del Gasto:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="gasto"
+                    placeholder="Nombre Gasto"
+                  />
+                </div>
+                <div class="form-group organizacion cantidad-gasto">
+                  <label for="cantidad">Ingresa la Cantidad del Gasto:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="cantidad"
+                    placeholder="Cantidad en $"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar Gasto</button>
+                <button type="" class="btn btn-danger" id="borrar-formulario">
+                  Limpiar Presupuesto
+                </button>
+              </form>
+            </div>
+          </td>
+          <td style="width: 50%; text-align: center">
+            <!-- Contenido de la segunda columna -->
+            <div class="contenido secundario">
+                <div class="columna">
+                  <p class="titulos">Presupuesto:</p>
+                  <p class="titulos">$ <span id="total"></span></p>
+                </div>
+                <div class="columna">
+                  <p class="titulos">Gastos:</p>
+                  <p class="titulos">$ <span id="total-gastos"></span></p>
+                </div>
+                <div class="columna">
+                  <p class="titulos">Saldo:</p>
+                  <p class="titulos">$ <span id="restante"></span></p>
+                </div>
+            </div>
+            <div></div>
+            <div class="contenido tercero">
+              <div class="columna">
+                <p class="titulos-2">Gasto:</p>
+              </div>
+              <div class="columna">
+                <p class="titulos-3">Valor:</p>
+              </div>
+              <div class="columna">
+                <p class="titulos"></p>
+              </div>
+          </div>
+            <div id="gastos">
+              <ul class="list-group"></ul>
+            </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="assets/js/logica.js"></script>
+  </body>
+</html>
